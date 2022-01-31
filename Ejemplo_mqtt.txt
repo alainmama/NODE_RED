@@ -1,0 +1,7 @@
+EJEMPLO CON MQTT
+
+Subscriber: mosquitto_sub -h 35.157.158.119 -i amanzo -t sic/flow3/temp
+                            (ip o localhost)   (cliente)   (tema o tópico)
+
+Publisher: mosquitto_pub -h 35.157.158.119 -t sic/flow3/temp -q 2 -i alainm -m "{\"id\":\"ALAIN\",\"temp\":\"30\",\"msg\":\"Chihuahua\"}"
+
